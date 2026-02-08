@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELVION GLOBAL | The New Standard in Sound</title>
+    <meta name="description" content="ELVION GLOBAL: Premium audio experience coming soon. Join the revolution.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+
+    <header class="hero-section">
+        <nav class="top-nav">
+            <div class="logo">ELVION<span class="accent-dot">.</span></div>
+            <a href="#newsletter" class="cta-small">Get Early Access</a>
+        </nav>
+
+        <div class="hero-content" data-speed="0.5">
+            <h1 class="glitch-text" data-text="HEAR THE UNHEARD">HEAR THE <br><span class="highlight">UNHEARD</span>
+            </h1>
+            <p class="hero-subtext">The New Standard in Sound.</p>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to Discover</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <section class="countdown-section">
+        <h2 class="section-title">Launch Initiated</h2>
+        <div class="timer-container">
+            <div class="time-unit">
+                <span id="days">120</span>
+                <span class="label">Days</span>
+            </div>
+            <div class="separator">:</div>
+            <div class="time-unit">
+                <span id="hours">00</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="separator">:</div>
+            <div class="time-unit">
+                <span id="minutes">00</span>
+                <span class="label">Minutes</span>
+            </div>
+            <div class="separator">:</div>
+            <div class="time-unit">
+                <span id="seconds">00</span>
+                <span class="label">Seconds</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-teaser">
+        <div class="container">
+            <h2 class="section-title">The Lineup</h2>
+            <div class="gallery">
+                <div class="product-card" data-speed="0.2">
+                    <div class="image-wrapper glow-effect">
+                        <!-- Image will be injected here -->
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=400"
+                            alt="The Elvion Over-Ear" class="product-img">
+                    </div>
+                    <h3>Elvion Over-Ear</h3>
+                    <p>Studio-grade immersion.</p>
+                </div>
+                <div class="product-card active" data-speed="0.4">
+                    <div class="image-wrapper glow-effect">
+                        <!-- Image will be injected here -->
+                        <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&q=80&w=400"
+                            alt="The Pro-Buds" class="product-img">
+                    </div>
+                    <h3>The Pro-Buds</h3>
+                    <p>Wireless perfection.</p>
+                </div>
+                <div class="product-card" data-speed="0.3">
+                    <div class="image-wrapper glow-effect">
+                        <!-- Image will be injected here -->
+                        <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&q=80&w=400"
+                            alt="The Tactical Headset" class="product-img">
+                    </div>
+                    <h3>Tactical Headset</h3>
+                    <p>Victory sounded better.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="feature-box">
+            <div class="icon">Sound</div> <!-- Placeholder for icon -->
+            <h4>Active Noise Cancellation</h4>
+            <p>Silence the world. Hear the detail.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon">Power</div> <!-- Placeholder for icon -->
+            <h4>40-Hour Battery</h4>
+            <p>Power that outlasts your playlist.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon">Bass</div> <!-- Placeholder for icon -->
+            <h4>Signature Bass</h4>
+            <p>Deep, resonant, and physically felt.</p>
+        </div>
+    </section>
+
+    <section id="newsletter" class="newsletter-section">
+        <div class="glass-card">
+            <h2>Join the Sound Revolution</h2>
+            <p>Get 20% off at launch and exclusive early access.</p>
+            <!-- 
+                IMPORTANT: Replace 'YOUR_FORMSPREE_ID' below with your actual Formspree Form ID.
+                1. Go to https://formspree.io/
+                2. Create a new form linked to yash559978@gmail.com
+                3. Copy the endpoint URL (e.g., https://formspree.io/f/xyza...) and paste it below.
+            -->
+            <form id="signup-form" class="signup-form" action="https://formspree.io/f/xzdabqoj" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Get Access</button>
+            </form>
+            <div id="form-status" class="form-status"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Elvion Global. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
