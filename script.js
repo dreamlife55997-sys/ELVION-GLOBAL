@@ -19,12 +19,21 @@ document.addEventListener('mousemove', (e) => {
 });
 
 // Countdown Timer
-const countdownDate = new Date();
-countdownDate.setDate(countdownDate.getDate() + 120); // 120 days from now
+// TARGET DATE: June 10, 2026 at 12:00 AM UTC
+const countdownDate = new Date("2026-06-10T00:00:00Z").getTime();
 
 function updateTimer() {
     const now = new Date().getTime();
     const distance = countdownDate - now;
+
+    // Handle expired timer
+    if (distance < 0) {
+        document.getElementById('days').innerText = "00";
+        document.getElementById('hours').innerText = "00";
+        document.getElementById('minutes').innerText = "00";
+        document.getElementById('seconds').innerText = "00";
+        return;
+    }
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
